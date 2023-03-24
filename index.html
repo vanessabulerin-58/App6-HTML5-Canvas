@@ -79,7 +79,8 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-var c = document.getElementByID("mycanvas"); //This variable establishes the connection between the function and then the canvas element button. 
+var c = document.getElementByID("mycanvas"); // This variable establishes the connection between the function and then the canvas element button. 
+var ctx = c.getContext("2d"); // This 2d string is vital because it generates fillStyle or fillReact. 
 </script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
