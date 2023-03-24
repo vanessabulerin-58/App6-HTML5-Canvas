@@ -82,22 +82,30 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-var c = document.getElementByID("mycanvas"); // This variable establishes the connection between the function and then the canvas element button. 
+var canvas = document.getElementByID("mycanvas"); // This variable establishes the connection between the function and then the canvas element button. 
 var ctx = c.getContext("2d"); // This 2d string is vital because it generates fillStyle or fillReact. 
 
 function drawRectangle(){
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = c.getContext("2d"); 
  ctx.fillStyle = "black"; 
  ctx.fillReact(50, 25, 150, 100);
 } // Creating a rectangle function with canvas dimensions. 
 function drawName(){
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = c.getContext("2d"); 
  ctx.fillText("Vanessa", 50, 200);
 } // This function will write my name on the canvas when button is clicked.
 function loadImage(){ 
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = c.getContext("2d"); 
  var img = document.getElementByID("picture"); 
 	ctx.drawImage(img, 0, 0, 150, 200); 
 } // This function loads the image I pasted onto the canvas. 
 
 function clearCanvas(){
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = c.getContext("2d"); 
  c.width = c.width; 
 } // This function will clear all entities on the canvas. 
 	
