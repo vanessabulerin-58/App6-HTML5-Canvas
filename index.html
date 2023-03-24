@@ -62,8 +62,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<br> 
 	<canvas id="mycanvas" width="400" height="200" style="border:1px solid #000000;"></canvas> <!-- Creating the canvas that's designated as mycanvas which all the buttons will control.-->
 	<br>
-	<button onclick="drawRectangle()">Draw Rectangle</button> <!-- Creating the variable to draw a black rectangle on the canvas when clicked-->
-	<button onclick="drawName()">Draw Name</button> <!-- Creating the variable that will generate my name onto the canvas through a function by pressing this button-->
+	<button onclick="drawRectangle()">Draw Rectangle</button> <!-- Creating the function to draw a black rectangle on the canvas when clicked-->
+	<button onclick="drawName()">Draw Name</button> <!-- Creating the function that will generate my name onto the canvas through a function by pressing this button-->
 	<button onclick="loadImage()">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
 	<button onclick="clearCanvas()">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean--> 
 	<p>Image Being Used</p> 
@@ -79,6 +79,7 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
+var c = document.getElementByID("mycanvas"); //This variable establishes the connection between the function and then the canvas element button. 
 </script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
