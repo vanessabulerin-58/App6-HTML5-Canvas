@@ -52,6 +52,10 @@ function drawRectangle(){
 } // Creating a rectangle function with canvas dimensions. 
 	
 function drawName(){
+	
+ var canvas = document.getElementById('mycanvas'); 
+ var ctx = canvas.getContext("2d"); 
+
  ctx.fillText("Vanessa", 50, 200);
 
 } // This function will write my name on the canvas when button is clicked.
