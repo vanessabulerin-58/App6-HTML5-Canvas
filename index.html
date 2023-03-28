@@ -62,9 +62,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <div id="content" class="w3-container">
-
 <canvas id="mycanvas" width="400" height="200" style="border:1px solid #000000;"></canvas> <!-- Creating the canvas that's designated as mycanvas which all the buttons will control.-->
-
 <button class="w3-button w3-black" onclick="drawRectangle()">Draw Rectangle</button> <!-- Creating the function to draw a black rectangle on the canvas when clicked-->
 <button class="w3-button w3-black" onclick="drawName()">Draw Name</button> <!-- Creating the function that will generate my name onto the canvas through a function by pressing this button-->
 <button class="w3-button w3-black" onclick="loadImage()">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
@@ -86,7 +84,9 @@ var canvas = document.getElementById("my canvas");
 var ctx = canvas.getContext("2D"); 
 ctx.fillStyle = "#FF000";
 ctx.fillRect(0, 0, 150. 75); 
+</script>
 
+<script>
 function drawRectangle(){
  ctx.fillStyle = "#FF000"; 
  ctx.fillRect(50, 25, 150, 100);
@@ -108,7 +108,7 @@ function clearCanvas(){
  var ctx = canvas.getContext("2d"); 
  c.width = c.width; 
 } // This function will clear all entities on the canvas. 
-	
+
 </script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
