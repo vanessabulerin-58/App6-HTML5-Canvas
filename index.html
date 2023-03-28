@@ -83,28 +83,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 var canvas = document.getElementById("mycanvas"); 
 var ctx = canvas.getContext("2D"); 
 ctx.fillStyle = "#FF000";
-ctx.fillRect(0, 0, 150. 75); 
+ctx.fillRect(0, 0, 150, 75); 
 
 function drawRectangle(){
  ctx.fillStyle = "#FF000"; 
  ctx.fillRect(50, 25, 150, 100);
 } // Creating a rectangle function with canvas dimensions. 
 function drawName(){
- var canvas = document.getElementByID("mycanvas"); 
- var ctx = canvas.getContext("2d"); 
  ctx.fillText("Vanessa", 50, 200);
 } // This function will write my name on the canvas when button is clicked.
 function loadImage(){ 
- var canvas = document.getElementByID("mycanvas"); 
- var ctx = canvas.getContext("2d"); 
  var img = document.getElementByID("picture"); 
 	ctx.drawImage(img, 0, 0, 150, 200); 
 } // This function loads the image I pasted onto the canvas. 
 
 function clearCanvas(){
- var canvas = document.getElementByID("mycanvas"); 
- var ctx = canvas.getContext("2d"); 
- c.width = c.width; 
+ ctx.clearRect(0, 0, 400, 200);  
 } // This function will clear all entities on the canvas. 
 
 </script>
