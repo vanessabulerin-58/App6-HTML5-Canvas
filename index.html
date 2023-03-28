@@ -82,10 +82,14 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
+var canvas = document.getElementById("my canvas"); 
+var ctx = canvas.getContext("2D"); 
+ctx.fillStyle = "#FF000";
+ctx.fillRect(0, 0, 150. 75); 
+</script> 
+
 function drawRectangle(){
- var c = document.getElementByID("mycanvas"); // This variable establishes the connection between the function and then the canvas element button.
- var ctx = c.getContext("2d"); // This 2d string is vital because it generates fillStyle or fillReact.
- ctx.fillStyle = "black"; 
+ ctx.fillStyle = "#FF000"; 
  ctx.fillRect(50, 25, 150, 100);
 } // Creating a rectangle function with canvas dimensions. 
 function drawName(){
