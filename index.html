@@ -33,6 +33,40 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
+<script>
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+var canvas = document.getElementById('mycanvas'); 
+var ctx = canvas.getContext("2D"); 
+
+function drawRectangle(){
+	
+ var canvas = document.getElementById('mycanvas'); 
+ var ctx = canvas.getContext("2D"); 
+	
+ ctx.fillStyle = "#FF000"; 
+ ctx.fillRect(50, 25, 150, 100);
+
+} // Creating a rectangle function with canvas dimensions. 
+	
+function drawName(){
+ ctx.fillText("Vanessa", 50, 200);
+
+} // This function will write my name on the canvas when button is clicked.
+
+function loadImage(){ 
+ var img = document.getElementByID("picture"); 
+	ctx.drawImage(img, 0, 0, 150, 200); 
+} // This function loads the image I pasted onto the canvas. 
+
+function clearCanvas(){
+ ctx.clearRect(0, 0, 400, 200);  
+} // This function will clear all entities on the canvas. 
+
+</script>
+	
 <style>	
 .body {
      margin: 0em;
@@ -53,7 +87,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 }
     canvas {
        border: 2px solid black; 
-} /* Adding a black border*/
+} /*Adding a black border*/
+	
 </style>
 
 <body>
@@ -63,10 +98,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <div id="content" class="w3-container">
 <canvas id="mycanvas" width="400" height="200" style="border:1px solid #000000;"></canvas> <!-- Creating the canvas that's designated as mycanvas which all the buttons will control.-->
-<button class="w3-button w3-black" onclick="drawRectangle()">Draw Rectangle</button> <!-- Creating the function to draw a black rectangle on the canvas when clicked-->
-<button class="w3-button w3-black" onclick="drawName()">Draw Name</button> <!-- Creating the function that will generate my name onto the canvas through a function by pressing this button-->
-<button class="w3-button w3-black" onclick="loadImage()">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
-<button class="w3-button w3-black" onclick="clearCanvas()">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean--> 
+<button class="w3-button w3-black" onclick="drawRectangle();">Draw Rectangle</button> <!-- Creating the function to draw a black rectangle on the canvas when clicked-->
+<button class="w3-button w3-black" onclick="drawName();">Draw Name</button> <!-- Creating the function that will generate my name onto the canvas through a function by pressing this button-->
+<button class="w3-button w3-black" onclick="loadImage();">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
+<button class="w3-button w3-black" onclick="clearCanvas();">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean--> 
 <p>Image Being Used</p> 
 <img id="picture" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types_of_Artificial_Intelligence.jpg" alt="Robot" width="150" height="200"> <!-- The image that will be loaded onto the canvas through the load image button-->
 	
@@ -75,35 +110,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 	</div> 
-<script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-var canvas = document.getElementById("mycanvas"); 
-var ctx = canvas.getContext("2D"); 
-
-function drawRectangle(){
-	
- var canvas = document.getElementById("mycanvas"); 
- var ctx = canvas.getContext("2D"); 
-	
- ctx.fillStyle = "#FF000"; 
- ctx.fillRect(50, 25, 150, 100);
-} // Creating a rectangle function with canvas dimensions. 
-function drawName(){
- ctx.fillText("Vanessa", 50, 200);
-} // This function will write my name on the canvas when button is clicked.
-function loadImage(){ 
- var img = document.getElementByID("picture"); 
-	ctx.drawImage(img, 0, 0, 150, 200); 
-} // This function loads the image I pasted onto the canvas. 
-
-function clearCanvas(){
- ctx.clearRect(0, 0, 400, 200);  
-} // This function will clear all entities on the canvas. 
-
-</script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
