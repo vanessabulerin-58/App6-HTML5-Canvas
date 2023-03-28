@@ -86,27 +86,26 @@ var canvas = document.getElementById("my canvas");
 var ctx = canvas.getContext("2D"); 
 ctx.fillStyle = "#FF000";
 ctx.fillRect(0, 0, 150. 75); 
-</script> 
 
 function drawRectangle(){
  ctx.fillStyle = "#FF000"; 
  ctx.fillRect(50, 25, 150, 100);
 } // Creating a rectangle function with canvas dimensions. 
 function drawName(){
- var c = document.getElementByID("mycanvas"); 
- var ctx = c.getContext("2d"); 
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = canvas.getContext("2d"); 
  ctx.fillText("Vanessa", 50, 200);
 } // This function will write my name on the canvas when button is clicked.
 function loadImage(){ 
- var c = document.getElementByID("mycanvas"); 
- var ctx = c.getContext("2d"); 
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = canvas.getContext("2d"); 
  var img = document.getElementByID("picture"); 
 	ctx.drawImage(img, 0, 0, 150, 200); 
 } // This function loads the image I pasted onto the canvas. 
 
 function clearCanvas(){
- var c = document.getElementByID("mycanvas"); 
- var ctx = c.getContext("2d"); 
+ var canvas = document.getElementByID("mycanvas"); 
+ var ctx = canvas.getContext("2d"); 
  c.width = c.width; 
 } // This function will clear all entities on the canvas. 
 	
