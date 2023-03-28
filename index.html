@@ -82,10 +82,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 var canvas = document.getElementById("mycanvas"); 
 var ctx = canvas.getContext("2D"); 
-ctx.fillStyle = "#FF000";
-ctx.fillRect(0, 0, 150, 75); 
 
 function drawRectangle(){
+	
+ var canvas = document.getElementById("mycanvas"); 
+ var ctx = canvas.getContext("2D"); 
+	
  ctx.fillStyle = "#FF000"; 
  ctx.fillRect(50, 25, 150, 100);
 } // Creating a rectangle function with canvas dimensions. 
