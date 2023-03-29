@@ -32,8 +32,36 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
+	
+</style>
+
+<body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>App6---HTML5-Canvas</h1>
+</div>
+	
+<div id="content" class="w3-container">
+
+<canvas id="mycanvas" width="400" height="200" style="border:1px solid #000000;"></canvas> <!-- Creating the canvas that's designated as mycanvas which all the buttons will control.-->
+
+<a href="#one" onclick="drawRectangle();" class="w3-btn w3-pink w3-round"> rectangle </a> <!-- Creating the function to draw a black rectangle on the canvas when clicked-->
+
+<button class="w3-button w3-black" onclick="drawName();">Draw Name</button> <!-- Creating the function that will generate my name onto the canvas through a function by pressing this button-->
+
+<button class="w3-button w3-black" onclick="loadImage();">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
+
+<button class="w3-button w3-black" onclick="clearCanvas();">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean-->  
+	
+<img id="picture" src="https://diystream.cns.utexas.edu/files/2017/06/diyclean.png" alt="DIY" width="0" height="0"> <!-- The image that will be loaded onto the canvas through the load image button-->
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+	</div> 
 
 <script>
+	
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
@@ -83,56 +111,6 @@ function clearCanvas(){
 } // This function will clear all entities on the canvas. 
 
 </script>
-	
-<style>	
-.body {
-     margin: 0em;
-}
-.page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
-}
-  .page:target {
-    left: 0vw;
-    z-index: 1;
-}
-    canvas {
-       border: 2px solid black; 
-} /*Adding a black border*/
-	
-</style>
-
-<body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
-</div>
-	
-<div id="content" class="w3-container">
-
-<canvas id="mycanvas" width="400" height="200" style="border:1px solid #000000;"></canvas> <!-- Creating the canvas that's designated as mycanvas which all the buttons will control.-->
-
-<a href="#one" onclick="drawRectangle();" class="w3-btn w3-pink w3-round"> rectangle </a> <!-- Creating the function to draw a black rectangle on the canvas when clicked-->
-
-<button class="w3-button w3-black" onclick="drawName();">Draw Name</button> <!-- Creating the function that will generate my name onto the canvas through a function by pressing this button-->
-
-<button class="w3-button w3-black" onclick="loadImage();">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
-
-<button class="w3-button w3-black" onclick="clearCanvas();">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean-->  
-	
-<img id="picture" src="https://diystream.cns.utexas.edu/files/2017/06/diyclean.png" alt="DIY" width="0" height="0"> <!-- The image that will be loaded onto the canvas through the load image button-->
-	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
-	</div> 
-
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
