@@ -69,7 +69,7 @@ function loadImage(){
  var image = new Image(); 
  img.src = "https://diystream.cns.utexas.edu/files/2017/06/diyclean.png"; 
  
- ctx.drawImage(img, 20, 200, 50, 50); 
+ ctx.drawImage(picture, 20, 200, 50, 50); 
 
 } // This function loads the image I pasted onto the canvas. 
 
@@ -123,11 +123,9 @@ function clearCanvas(){
 
 <button class="w3-button w3-black" onclick="loadImage();">Load Image</button> <!-- Image coded in different line of code will generate onto the canvas when the button is clicked-->
 
-<button class="w3-button w3-black" onclick="clearCanvas();">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean--> 
-
-<p>Image Being Used</p> 
+<button class="w3-button w3-black" onclick="clearCanvas();">Clear Canvas</button> <!-- This button when clicked will clear the canvas clean-->  
 	
-<img id="image" src="https://diystream.cns.utexas.edu/files/2017/06/diyclean.png" alt="DIY" width="0" height="0"> <!-- The image that will be loaded onto the canvas through the load image button-->
+<img id="picture" src="https://diystream.cns.utexas.edu/files/2017/06/diyclean.png" alt="DIY" width="0" height="0"> <!-- The image that will be loaded onto the canvas through the load image button-->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
