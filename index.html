@@ -72,6 +72,10 @@ function loadImage(){
 } // This function loads the image I pasted onto the canvas. 
 
 function clearCanvas(){
+	
+ var canvas = document.getElementById('mycanvas'); 
+ var ctx = canvas.getContext("2d"); 
+	
  ctx.clearRect(0, 0, 400, 200);  
 
 } // This function will clear all entities on the canvas. 
